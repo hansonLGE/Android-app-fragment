@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff1f1f1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginBottom="3dp"
+            android:background="#660000"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/all_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="All Apps"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/button_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/all_title"
+                android:layout_alignBottom="@+id/all_title"
+                android:layout_alignParentRight="true"
+                android:focusable="true"
+                android:background="@layout/btn_selector"
+                android:text="Search" />
+
+           <EditText
+               android:id="@+id/edit_search"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignBaseline="@+id/all_title"
+               android:layout_alignBottom="@+id/all_title"
+               android:layout_marginLeft="100dp"
+               android:layout_toLeftOf="@+id/button_search"
+               android:ems="10"
+               android:singleLine="true"
+               android:text="first character of the app title"
+               android:textColor="#ffffff"
+               android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#660000"
+            android:orientation="vertical"
+            android:layout_weight="5" >
+ 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp" >
+
+                    <Button
+                        android:id="@+id/button_latest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:focusable="true"
+                        android:background="@layout/btn_selector"
+                        android:text="Latest" />
+
+                    <Button
+                        android:id="@+id/button_hot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:focusable="true"
+                        android:background="@layout/btn_selector"
+                        android:text="Hot" />
+
+                    <Button
+                        android:id="@+id/button_game"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:focusable="true"
+                        android:background="@layout/btn_selector"
+                        android:text="Game" />
+
+                    <Button
+                        android:id="@+id/button_educ"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:focusable="true"
+                        android:background="@layout/btn_selector"
+                        android:text="Education" />
+
+                    <Button
+                        android:id="@+id/button_tool"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:focusable="true"
+                        android:background="@layout/btn_selector"
+                        android:text="Tool" />
+
+                    <Button
+                        android:id="@+id/button_life"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:focusable="true"
+                        android:background="@layout/btn_selector"
+                        android:text="Life" />
+
+                    <Button
+                        android:id="@+id/button_sociality"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:focusable="true"
+                        android:background="@layout/btn_selector"
+                        android:text="Sociality" />
+                    
+                </LinearLayout>
+            
+
+                        
+                <GridView
+                    android:id="@+id/gridAllApps"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:verticalSpacing="3dp"
+                    android:horizontalSpacing="3dp"
+                    android:stretchMode="columnWidth"
+                    android:gravity="center"
+                    android:numColumns="3" >
+                </GridView>
+
+
+            
+         </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
